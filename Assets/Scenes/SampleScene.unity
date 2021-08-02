@@ -215,8 +215,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 933264789}
-  - component: {fileID: 933264790}
   - component: {fileID: 933264791}
+  - component: {fileID: 933264790}
   m_Layer: 0
   m_Name: WinTween
   m_TagString: Untagged
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 933264788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17eb07ee8eca2384d8d0f75217bb5866, type: 3}
+  m_Script: {fileID: 11500000, guid: 8df2e9ba3dab7c946b3ed1b27885c048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &933264791

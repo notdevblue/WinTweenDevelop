@@ -2,21 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using WinTween;
 using WinTween.Position;
+using static WinTween.WindowCore;
 
 public class WinTest : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        PositionEffects.Middle(0, true);
+        Middle(0, true);
+        ResetPositionVar();
+
+        Debug.Log("Mid " + MiddleCenter);
+        Debug.Log("TopLeft " + TopLeft);
+        Debug.Log("BottomRight " + BottomRight);
+        Debug.Log("Current " + Position.Location);
     }
+
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.L))
         {
-            PositionEffects.BounceUp(2.0f, 200.0f);
+            Position.Move(TopLeft, 4.0f, false, () => Debug.Log("다 움직임"));
         }
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            Position.Move(BottomRight, 4.0f, false, () => Debug.Log("다 움직임"));
+        }
+
+        
     }
+
 }

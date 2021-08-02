@@ -57,8 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\WinTween\WinTest.cs" />
-    <Compile Include="Assets\WinTween\WindowEffects.cs" />
-    <Compile Include="Assets\WinTween\WindowCore.cs" />
+    <Compile Include="Assets\WinTween\Sub\WindowPosition.cs" />
+    <Compile Include="Assets\WinTween\Core\WindowCore.cs" />
+    <Compile Include="Assets\WinTween\Sub\WindowScale.cs" />
+    <Compile Include="Assets\WinTween\Core\Window.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
